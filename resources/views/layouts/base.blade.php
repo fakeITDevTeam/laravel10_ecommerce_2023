@@ -12,17 +12,16 @@
     <meta name="theme-color" content="#e87316">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Surfside Media">
+    <meta name="apple-mobile-web-app-title" content="fakeITDevTeam">
     <meta name="msapplication-TileImage" content="{{ asset('assets/images/favicon.ico') }}">
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Surfside Media">
-    <meta name="keywords" content="Surfside Media">
-    <meta name="author" content="Surfside Media">
+    <meta name="description" content="fakeITDevTeam">
+    <meta name="keywords" content="fakeITDevTeam">
+    <meta name="author" content="fakeITDevTeam">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <title>SurfsideMedia</title>
+    <title>fakeITDevTeam</title>
 
     <link id="rtl-link" rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/vendors/ion.rangeSlider.min.css') }}">
@@ -176,17 +175,28 @@
                                     </li>
                                     <li class="onhover-dropdown">
                                         <div class="cart-media name-usr">
-                                            <i data-feather="user"></i>
+                                            @auth
+                                                <span>{{ Auth::user()->name }}</span>
+                                            @endauth<i data-feather="user"></i>
                                         </div>
                                         <div class="onhover-div profile-dropdown">
                                             <ul>
-                                                <li>
-                                                    <a href="login.html" class="d-block">Login</a>
-                                                </li>
-                                                <li>
-                                                    <a href="register.html" class="d-block">Register</a>
-                                                </li>
-
+                                                @if (Route::has('login'))
+                                                    @auth
+                                                        @if (Auth::user()->utype === 'ADM')
+                                                            <li><a href="{{route('admin.index')}}" class="d-block">Dashboard</a></li>
+                                                        @else
+                                                            <li><a href="{{route('user.index')}}" class="d-block">My Account</a></li>
+                                                        @endif
+                                                        <li><a href="{{route('logout')}}" onclick="event.preventDefault();document.getElementById('frmlogout').submit();" class="d-block">Logout</a></li>
+                                                        <form action="{{route('logout')}}" id="frmlogout" method="POST">
+                                                            @csrf
+                                                        </form>
+                                                    @else
+                                                        <li><a href="{{route('login')}}" class="d-block">Login</a></li>
+                                                        <li><a href="{{route('register')}}" class="d-block">Register</a></li>
+                                                    @endauth
+                                                @endif
                                             </ul>
                                         </div>
                                     </li>
@@ -357,7 +367,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-4 col-sm-6 d-none d-sm-block">
                         <div class="footer-newsletter">
-                            <h3>Let’s stay in touch</h3>
+                            <h3>Let's stay in touch</h3>
                             <div class="form-newsletter">
                                 <div class="input-group mb-4">
                                     <input type="text" class="form-control color-4" placeholder="Your Email Address">
@@ -405,7 +415,7 @@
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <p class="mb-0 font-dark">© &#169;&nbsp;2023, fakeITDevGuy.</p>
+                        <p class="mb-0 font-dark">&#169;&nbsp;2023, fakeITDevGuy.</p>
                     </div>
                 </div>
             </div>
@@ -423,7 +433,7 @@
                     <div class="modal-title">
                         <h2 class="tt-title">Sign up for our Newsletter!</h2>
                         <p class="font-light">Never miss any new updates or products we reveal, stay up to date.</p>
-                        <p class="font-light">Oh, and it''s free!</p>
+                        <p class="font-light">Oh, and it's free!</p>
 
                         <div class="input-group mb-3">
                             <input placeholder="Email" class="form-control" type="text">
@@ -442,7 +452,7 @@
     <div class="modal fade cart-modal" id="addtocart" tabindex="-1" role="dialog" aria-label="myModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content ">
+            <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
