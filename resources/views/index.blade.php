@@ -3,19 +3,19 @@
   <section class="pt-0 poster-section">
     <div class="poster-image slider-for custome-arrow classic-arrow">
         <div>
-            <img src="assets/images/furniture-images/poster/1.png" class="img-fluid blur-up lazyload" alt="">
+            <img src="{{ asset('assets/images/furniture-images/poster/1.png') }}" class="img-fluid blur-up lazyload" alt="">
         </div>
         <div>
-            <img src="assets/images/furniture-images/poster/2.png" class="img-fluid blur-up lazyload" alt="">
+            <img src="{{ asset('assets/images/furniture-images/poster/2.png') }}" class="img-fluid blur-up lazyload" alt="">
         </div>
         <div>
-            <img src="assets/images/furniture-images/poster/3.png" class="img-fluid blur-up lazyload" alt="">
+            <img src="{{ asset('assets/images/furniture-images/poster/3.png') }}" class="img-fluid blur-up lazyload" alt="">
         </div>
     </div>
     <div class="slider-nav image-show">
         <div>
             <div class="poster-img">
-                <img src="assets/images/furniture-images/poster/t2.jpg" class="img-fluid blur-up lazyload" alt="">
+                <img src="{{ asset('assets/images/furniture-images/poster/t2.jpg') }}" class="img-fluid blur-up lazyload" alt="">
                 <div class="overlay-color">
                     <i class="fas fa-plus theme-color"></i>
                 </div>
@@ -23,7 +23,7 @@
         </div>
         <div>
             <div class="poster-img">
-                <img src="assets/images/furniture-images/poster/t1.jpg" class="img-fluid blur-up lazyload" alt="">
+                <img src="{{ asset('assets/images/furniture-images/poster/t1.jpg') }}" class="img-fluid blur-up lazyload" alt="">
                 <div class="overlay-color">
                     <i class="fas fa-plus theme-color"></i>
                 </div>
@@ -32,7 +32,7 @@
         </div>
         <div>
             <div class="poster-img">
-                <img src="assets/images/furniture-images/poster/t3.jpg" class="img-fluid blur-up lazyload" alt="">
+                <img src="{{ asset('assets/images/furniture-images/poster/t3.jpg') }}" class="img-fluid blur-up lazyload" alt="">
                 <div class="overlay-color">
                     <i class="fas fa-plus theme-color"></i>
                 </div>
@@ -72,7 +72,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="collection-banner p-bottom p-center text-center">
                     <a href="shop-left-sidebar.html" class="banner-img">
-                        <img src="assets/images/fashion/banner/1.jpg" class="bg-img blur-up lazyload" alt="">
+                        <img src="{{ asset('assets/images/fashion/banner/1.jpg') }}" class="bg-img blur-up lazyload" alt="">
                     </a>
                     <div class="banner-detail">
                         <a href="javacript:void(0)" class="heart-wishlist">
@@ -91,7 +91,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="collection-banner p-bottom p-center text-center">
                     <a href="shop-left-sidebar.html" class="banner-img">
-                        <img src="assets/images/fashion/banner/2.jpg" class="bg-img blur-up lazyload" alt="">
+                        <img src="{{ asset('assets/images/fashion/banner/2.jpg') }}" class="bg-img blur-up lazyload" alt="">
                     </a>
                     <div class="banner-detail">
                         <a href="javacript:void(0)" class="heart-wishlist">
@@ -110,7 +110,7 @@
             <div class="col-lg-4">
                 <div class="collection-banner p-bottom p-center text-center">
                     <a href="shop-left-sidebar.html" class="banner-img">
-                        <img src="assets/images/fashion/banner/3.jpg" class="bg-img blur-up lazyload" alt="">
+                        <img src="{{ asset('assets/images/fashion/banner/3.jpg') }}" class="bg-img blur-up lazyload" alt="">
                     </a>
                     <div class="banner-detail">
                         <a href="javacript:void(0)" class="heart-wishlist">
@@ -179,7 +179,7 @@
                 <div class="product-box">
                     <div class="img-wrapper">
                         <a href="product/details.html">
-                            <img src="assets/images/fashion/product/front/10.jpg"
+                            <img src="{{ asset('assets/images/fashion/product/front/10.jpg') }}"
                                 class="w-100 bg-img blur-up lazyload" alt="">
                         </a>
                         <div class="circle-shape"></div>
@@ -244,7 +244,7 @@
                 <div class="product-box">
                     <div class="img-wrapper">
                         <a href="product/details.html">
-                            <img src="assets/images/fashion/product/front/10.jpg"
+                            <img src="{{ asset('assets/images/fashion/product/front/10.jpg') }}"
                                 class="w-100 bg-img blur-up lazyload" alt="">
                         </a>
                         <div class="circle-shape"></div>
@@ -309,7 +309,7 @@
                 <div class="product-box">
                     <div class="img-wrapper">
                         <a href="product/details.html">
-                            <img src="assets/images/fashion/product/front/17.jpg"
+                            <img src="{{ asset('assets/images/fashion/product/front/17.jpg') }}"
                                 class="w-100 bg-img blur-up lazyload" alt="">
                         </a>
                         <div class="circle-shape"></div>
@@ -374,7 +374,7 @@
                 <div class="product-box">
                     <div class="img-wrapper">
                         <a href="product/details.html">
-                            <img src="assets/images/fashion/product/front/3.jpg"
+                            <img src="{{ asset('assets/images/fashion/product/front/3.jpg') }}"
                                 class="w-100 bg-img blur-up lazyload" alt="">
                         </a>
                         <div class="circle-shape"></div>
@@ -439,7 +439,7 @@
                 <div class="product-box">
                     <div class="img-wrapper">
                         <a href="product/details.html">
-                            <img src="assets/images/fashion/product/front/2.jpg"
+                            <img src="{{ asset('assets/images/fashion/product/front/2.jpg') }}"
                                 class="w-100 bg-img blur-up lazyload" alt="">
                         </a>
                         <div class="circle-shape"></div>
@@ -504,7 +504,7 @@
                 <div class="product-box">
                     <div class="img-wrapper">
                         <a href="product/details.html">
-                            <img src="assets/images/fashion/product/front/12.jpg"
+                            <img src="{{ asset('assets/images/fashion/product/front/12.jpg') }}"
                                 class="w-100 bg-img blur-up lazyload" alt="">
                         </a>
                         <div class="circle-shape"></div>
@@ -569,7 +569,7 @@
                 <div class="product-box">
                     <div class="img-wrapper">
                         <a href="product/details.html">
-                            <img src="assets/images/fashion/product/front/3.jpg"
+                            <img src="{{ asset('assets/images/fashion/product/front/3.jpg') }}"
                                 class="w-100 bg-img blur-up lazyload" alt="">
                         </a>
                         <div class="circle-shape"></div>
@@ -634,7 +634,7 @@
                 <div class="product-box">
                     <div class="img-wrapper">
                         <a href="product/details.html">
-                            <img src="assets/images/fashion/product/front/8.jpg"
+                            <img src="{{ asset('assets/images/fashion/product/front/8.jpg') }}"
                                 class="w-100 bg-img blur-up lazyload" alt="">
                         </a>
                         <div class="circle-shape"></div>
@@ -699,7 +699,7 @@
                 <div class="product-box">
                     <div class="img-wrapper">
                         <a href="product/details.html">
-                            <img src="assets/images/fashion/product/front/23.jpg"
+                            <img src="{{ asset('assets/images/fashion/product/front/23.jpg') }}"
                                 class="w-100 bg-img blur-up lazyload" alt="">
                         </a>
                         <div class="circle-shape"></div>
@@ -764,7 +764,7 @@
                 <div class="product-box">
                     <div class="img-wrapper">
                         <a href="product/details.html">
-                            <img src="assets/images/fashion/product/front/11.jpg"
+                            <img src="{{ asset('assets/images/fashion/product/front/11.jpg') }}"
                                 class="w-100 bg-img blur-up lazyload" alt="">
                         </a>
                         <div class="circle-shape"></div>
@@ -829,7 +829,7 @@
                 <div class="product-box">
                     <div class="img-wrapper">
                         <a href="product/details.html">
-                            <img src="assets/images/fashion/product/front/20.jpg"
+                            <img src="{{ asset('assets/images/fashion/product/front/20.jpg') }}"
                                 class="w-100 bg-img blur-up lazyload" alt="">
                         </a>
                         <div class="circle-shape"></div>
@@ -894,7 +894,7 @@
                 <div class="product-box">
                     <div class="img-wrapper">
                         <a href="product/details.html">
-                            <img src="assets/images/fashion/product/front/20.jpg"
+                            <img src="{{ asset('assets/images/fashion/product/front/20.jpg') }}"
                                 class="w-100 bg-img blur-up lazyload" alt="">
                         </a>
                         <div class="circle-shape"></div>
@@ -983,7 +983,7 @@
                 <div class="category-wrapper category-slider1 white-arrow category-arrow">
                     <div>
                         <a href="shop-left-sidebar.html" class="category-wrap category-padding">
-                            <img src="assets/images/fashion/category/1.jpg" class="bg-img blur-up lazyload"
+                            <img src="{{ asset('assets/images/fashion/category/1.jpg') }}" class="bg-img blur-up lazyload"
                                 alt="category image">
                             <div class="category-content category-text-1">
                                 <h3 class="theme-color">Shoes</h3>
@@ -993,7 +993,7 @@
                     </div>
                     <div>
                         <a href="shop-left-sidebar.html" class="category-wrap category-padding">
-                            <img src="assets/images/fashion/category/2.jpg" class="bg-img blur-up lazyload"
+                            <img src="{{ asset('assets/images/fashion/category/2.jpg') }}" class="bg-img blur-up lazyload"
                                 alt="category image">
                             <div class="category-content category-text-1">
                                 <h3 class="theme-color">Men</h3>
@@ -1003,7 +1003,7 @@
                     </div>
                     <div>
                         <a href="shop-left-sidebar.html" class="category-wrap category-padding">
-                            <img src="assets/images/fashion/category/3.jpg" class="bg-img blur-up lazyload"
+                            <img src="{{ asset('assets/images/fashion/category/3.jpg') }}" class="bg-img blur-up lazyload"
                                 alt="category image">
                             <div class="category-content category-text-1">
                                 <h3 class="theme-color">Jeans</h3>
@@ -1013,7 +1013,7 @@
                     </div>
                     <div>
                         <a href="shop-left-sidebar.html" class="category-wrap category-padding">
-                            <img src="assets/images/fashion/category/4.jpg" class="bg-img blur-up lazyload"
+                            <img src="{{ asset('assets/images/fashion/category/4.jpg') }}" class="bg-img blur-up lazyload"
                                 alt="category image">
                             <div class="category-content category-text-1">
                                 <h3 class="theme-color">Jacket</h3>
@@ -1023,7 +1023,7 @@
                     </div>
                     <div>
                         <a href="shop-left-sidebar.html" class="category-wrap category-padding">
-                            <img src="assets/images/fashion/category/3.jpg" class="bg-img blur-up lazyload"
+                            <img src="{{ asset('assets/images/fashion/category/3.jpg') }}" class="bg-img blur-up lazyload"
                                 alt="category image">
                             <div class="category-content category-text-1">
                                 <h3 class="theme-color">Jeans</h3>
@@ -1055,7 +1055,7 @@
                                 <div class="col-lg-12 col-md-6 col-12">
                                     <div class="product-image">
                                         <a href="product/details.html">
-                                            <img src="assets/images/furniture-images/product/1.jpg"
+                                            <img src="{{ asset('assets/images/furniture-images/product/1.jpg') }}"
                                                 class="blur-up lazyload" alt="">
                                         </a>
                                         <div class="product-details">
@@ -1099,7 +1099,7 @@
                                 <div class="col-lg-12 col-md-6 col-12">
                                     <div class="product-image">
                                         <a href="product/details.html">
-                                            <img src="assets/images/furniture-images/product/2.jpg"
+                                            <img src="{{ asset('assets/images/furniture-images/product/2.jpg') }}"
                                                 class="blur-up lazyload" alt="">
                                         </a>
                                         <div class="product-details">
@@ -1143,7 +1143,7 @@
                                 <div class="col-lg-12 col-md-6 col-12">
                                     <div class="product-image">
                                         <a href="product/details.html">
-                                            <img src="assets/images/furniture-images/product/3.jpg"
+                                            <img src="{{ asset('assets/images/furniture-images/product/3.jpg') }}"
                                                 class="blur-up lazyload" alt="">
                                         </a>
                                         <div class="product-details">
@@ -1187,7 +1187,7 @@
                                 <div class="col-lg-12 col-md-6 col-12">
                                     <div class="product-image">
                                         <a href="product/details.html">
-                                            <img src="assets/images/furniture-images/product/4.jpg"
+                                            <img src="{{ asset('assets/images/furniture-images/product/4.jpg') }}"
                                                 class="blur-up lazyload" alt="">
                                         </a>
                                         <div class="product-details">
@@ -1244,7 +1244,7 @@
                                 <div class="col-lg-12 col-md-6 col-12">
                                     <div class="product-image">
                                         <a href="product/details.html">
-                                            <img src="assets/images/furniture-images/product/1.jpg"
+                                            <img src="{{ asset('assets/images/furniture-images/product/1.jpg') }}"
                                                 class="blur-up lazyload" alt="">
                                         </a>
                                         <div class="product-details">
@@ -1288,7 +1288,7 @@
                                 <div class="col-lg-12 col-md-6 col-12">
                                     <div class="product-image">
                                         <a href="product/details.html">
-                                            <img src="assets/images/furniture-images/product/2.jpg"
+                                            <img src="{{ asset('assets/images/furniture-images/product/2.jpg') }}"
                                                 class="blur-up lazyload" alt="">
                                         </a>
                                         <div class="product-details">
@@ -1332,7 +1332,7 @@
                                 <div class="col-lg-12 col-md-6 col-12">
                                     <div class="product-image">
                                         <a href="product/details.html">
-                                            <img src="assets/images/furniture-images/product/3.jpg"
+                                            <img src="{{ asset('assets/images/furniture-images/product/3.jpg') }}"
                                                 class="blur-up lazyload" alt="">
                                         </a>
                                         <div class="product-details">
