@@ -86,8 +86,8 @@
                                         <td>
                                             <div class="qty-box">
                                                 <div class="input-group">
-                                                    <input type="number" name="quantity"
-                                                        data-rowid="ba02b0dddb000b25445168300c65386d"
+                                                    <input type="number" name="quantity" data-rowid="{{$item->rowId}}"
+                                                        onchange="updateQuantity(this)"
                                                         class="form-control input-number" value="{{$item->qty}}">
                                                 </div>
                                             </div>
@@ -116,7 +116,7 @@
                             </div>
                             <div class="col-sm-5 col-7">
                                 <div class="left-side-button float-start">
-                                    <a href="../shop.html" class="btn btn-solid-default btn fw-bold mb-0 ms-0">
+                                    <a href="{{route('shop.index')}}" class="btn btn-solid-default btn fw-bold mb-0 ms-0">
                                         <i class="fas fa-arrow-left"></i> Continue Shopping</a>
                                 </div>
                             </div>
@@ -176,4 +176,19 @@
             @endif
         </div>
     </section>
+    <form action="{{route('cart.update')}}" method="POST" id="updateCartQty">
+        @csrf
+        @method('put')
+        <input type="hidden" id="rowId" name="rowId" />
+        <input type="hidden" id="quantity" name="quantity" />
+    </form>
 @endsection
+@push('scripts')
+    <script>
+        function updateQuantity(qty) {
+            $('#rowId').val($(qty).data('rowid'));
+            $('#quantity').val($(qty).val());
+            $('#updateCartQty').submit();
+        }
+    </script>
+@endpush
