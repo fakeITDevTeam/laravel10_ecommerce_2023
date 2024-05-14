@@ -409,10 +409,10 @@
                               </div>
                               <div class="dropdown select-featured">
                                   <select class="form-select" name="size" id="pagesize">
-                                      <option value="12" selected="">12 Products Per Page</option>
-                                      <option value="24">24 Products Per Page</option>
-                                      <option value="52">52 Products Per Page</option>
-                                      <option value="100">100 Products Per Page</option>
+                                      <option value="12" {{$size==12?'selected':''}}>12 Products Per Page</option>
+                                      <option value="24" {{$size==24?'selected':''}}>24 Products Per Page</option>
+                                      <option value="52" {{$size==52?'selected':''}}>52 Products Per Page</option>
+                                      <option value="100" {{$size==100?'selected':''}}>100 Products Per Page</option>
                                   </select>
                               </div>
                           </div>
@@ -559,4 +559,17 @@
 </section>
 <!-- Subscribe Section End -->
 
+<form action="" method="GET" id="frmFliter">
+    <input type="hidden" name="page" id="page" value="{{$page}}" />
+    <input type="hidden" name="size" id="size" value="{{$size}}" />
+</form>
 @endsection
+
+@push("scripts")
+    <script>
+        $("#pagesize").on("change",function() {
+            $("#size").val($("#pagesize option:selected").val());
+            $("#frmFliter").submit();
+        });
+    </script>
+@endpush
